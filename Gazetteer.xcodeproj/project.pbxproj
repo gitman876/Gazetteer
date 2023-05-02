@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0751C7132A0128E200B0AF8F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751C7122A0128E200B0AF8F /* Country.swift */; };
+		0751C7162A01318800B0AF8F /* MapContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751C7152A01318800B0AF8F /* MapContainerViewModel.swift */; };
+		0751C7192A01336F00B0AF8F /* MapTypeOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751C7182A01336F00B0AF8F /* MapTypeOptionsView.swift */; };
+		0751C71B2A01340E00B0AF8F /* MapUIViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751C71A2A01340E00B0AF8F /* MapUIViewRepresentable.swift */; };
 		07EAA06729F7D5BA00D714EB /* GazetteerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA06629F7D5BA00D714EB /* GazetteerApp.swift */; };
-		07EAA06929F7D5BA00D714EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA06829F7D5BA00D714EB /* ContentView.swift */; };
+		07EAA06929F7D5BA00D714EB /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA06829F7D5BA00D714EB /* MapContainerView.swift */; };
 		07EAA06B29F7D5BC00D714EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EAA06A29F7D5BC00D714EB /* Assets.xcassets */; };
 		07EAA06E29F7D5BC00D714EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EAA06D29F7D5BC00D714EB /* Preview Assets.xcassets */; };
 		07EAA07829F7D5BC00D714EB /* GazetteerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA07729F7D5BC00D714EB /* GazetteerTests.swift */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0751C7122A0128E200B0AF8F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		0751C7152A01318800B0AF8F /* MapContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerViewModel.swift; sourceTree = "<group>"; };
+		0751C7182A01336F00B0AF8F /* MapTypeOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTypeOptionsView.swift; sourceTree = "<group>"; };
+		0751C71A2A01340E00B0AF8F /* MapUIViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUIViewRepresentable.swift; sourceTree = "<group>"; };
 		07EAA06329F7D5BA00D714EB /* Gazetteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gazetteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EAA06629F7D5BA00D714EB /* GazetteerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GazetteerApp.swift; sourceTree = "<group>"; };
-		07EAA06829F7D5BA00D714EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07EAA06829F7D5BA00D714EB /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 		07EAA06A29F7D5BC00D714EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07EAA06D29F7D5BC00D714EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07EAA07329F7D5BC00D714EB /* GazetteerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GazetteerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +79,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0751C7112A0128CE00B0AF8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0751C7122A0128E200B0AF8F /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0751C7142A01316A00B0AF8F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0751C7152A01318800B0AF8F /* MapContainerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0751C7172A01334D00B0AF8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07EAA06829F7D5BA00D714EB /* MapContainerView.swift */,
+				0751C7182A01336F00B0AF8F /* MapTypeOptionsView.swift */,
+				0751C71A2A01340E00B0AF8F /* MapUIViewRepresentable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		07EAA05A29F7D5BA00D714EB = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +128,10 @@
 		07EAA06529F7D5BA00D714EB /* Gazetteer */ = {
 			isa = PBXGroup;
 			children = (
+				0751C7112A0128CE00B0AF8F /* Models */,
+				0751C7172A01334D00B0AF8F /* Views */,
+				0751C7142A01316A00B0AF8F /* ViewModels */,
 				07EAA06629F7D5BA00D714EB /* GazetteerApp.swift */,
-				07EAA06829F7D5BA00D714EB /* ContentView.swift */,
 				07EAA06A29F7D5BC00D714EB /* Assets.xcassets */,
 				07EAA06C29F7D5BC00D714EB /* Preview Content */,
 			);
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07EAA06929F7D5BA00D714EB /* ContentView.swift in Sources */,
+				0751C7192A01336F00B0AF8F /* MapTypeOptionsView.swift in Sources */,
+				0751C71B2A01340E00B0AF8F /* MapUIViewRepresentable.swift in Sources */,
+				07EAA06929F7D5BA00D714EB /* MapContainerView.swift in Sources */,
+				0751C7132A0128E200B0AF8F /* Country.swift in Sources */,
 				07EAA06729F7D5BA00D714EB /* GazetteerApp.swift in Sources */,
+				0751C7162A01318800B0AF8F /* MapContainerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +460,13 @@
 				DEVELOPMENT_TEAM = 49L9R4P8KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +491,13 @@
 				DEVELOPMENT_TEAM = 49L9R4P8KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
