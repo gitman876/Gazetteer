@@ -21,10 +21,6 @@ struct MapUIViewRepresentable: UIViewRepresentable {
         uiView.setRegion(region, animated: true)
         uiView.showsUserLocation = true
         uiView.mapType = mapType
-        if mapType == .satelliteFlyover || mapType == .hybridFlyover {
-            let camera = MKMapCamera(lookingAtCenter: region.center, fromDistance: 1000, pitch: 45, heading: 0)
-            uiView.camera = camera
-        }
     }
     
 }
